@@ -1,0 +1,11 @@
+--- dmenu.c
++++ dmenu.c
+@@ -665,7 +744,7 @@ setup(void)
+ 	}
+ 	promptw = (prompt && *prompt) ? TEXTW(prompt) : 0;
+ 	inputw = MIN(inputw, mw/3);
+-	match();
++	fuzzymatch();
+ 
+ 	/* create menu window */
+ 	swa.override_redirect = True;
